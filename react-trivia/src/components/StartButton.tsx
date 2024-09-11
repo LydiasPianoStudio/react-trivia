@@ -1,25 +1,15 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 
-interface ButtonProps {
-  children: string;
-  color?:
-    | "primary"
-    | "secondary"
-    | "success"
-    | "danger"
-    | "warning"
-    | "info"
-    | "light"
-    | "dark";
-  onClick: () => void;
+interface StartButtonProps {
+  onStart: () => void;
 }
-const Button = ({ children, onClick, color = "primary" }: ButtonProps) => {
+
+const StartButton: React.FC<StartButtonProps> = ({ onStart }) => {
   return (
-    <button className={"btn btn-" + color} onClick={onClick}>
-      {children}
+    <button className="btn btn-primary" onClick={onStart}>
+      Start Quiz
     </button>
   );
 };
 
-export default Button;
+export default StartButton;

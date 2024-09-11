@@ -1,32 +1,27 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React, { useState } from "react";
+import StartButton from "./components/StartButton";
+import QuizComponent from "./components/QuizComponent";
 
-function App() {
-  //const [count, setCount] = useState(0)
-  function handleClick(): void {
-    console.log("The game has started!");
-  }
+const App: React.FC = () => {
+  const [quizStarted, setQuizStarted] = useState(false);
+
+  const handleStart = () => {
+    setQuizStarted(true);
+  };
 
   return (
-    <>
-      <h1>Welcome to Music Trivia</h1>
-      <p>
-        Instructions: There are 20 Questions! Select Your Answer and Click
-        "Next"
-      </p>
-      <button onClick={handleClick}>Start The Game</button>
-    </>
+    <div className="container">
+      {!quizStarted ? (
+        <>
+          <h1>Welcome to the Music History Quiz</h1>
+          <p>Click the button below to start the quiz!</p>
+          <StartButton onStart={handleStart} />
+        </>
+      ) : (
+        <QuizComponent />
+      )}
+    </div>
   );
-}
+};
 
 export default App;
-
-// <div>
-
-//   <button onClick={() => setCount((count) => count + 1)}>
-//     count is {count}
-//   </button>
-
-// </div>
