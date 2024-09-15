@@ -1,36 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 
-interface QuestionProps {
+interface QuestionComponentProps {
   question: string;
   answers: string[];
   correctAnswer: string;
-  selectedAnswer: string | null;
   onAnswerSelect: (answer: string) => void;
 }
 
-const QuestionComponent: React.FC<QuestionProps> = ({
+const QuestionComponent: React.FC<QuestionComponentProps> = ({
   question,
   answers,
   correctAnswer,
-  selectedAnswer,
   onAnswerSelect,
 }) => {
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+
+  const handleAnswerClick = (answer: string) => {
+    setSelectedAnswer(answer); // Store selected answer
+    onAnswerSelect(answer); // Trigger parent function
+  };
+
+  const answerLabels = ["A", "B", "C", "D"]; // Labels for the answers
+
   return (
-    <div>
-      <h3>{question}</h3>
-      <ul className="list-group">
+    <div className="question-container">
+      <h2>{question}</h2>
+      <div className="answer-list">
         {answers.map((answer, index) => (
-          <li
+          <div
             key={index}
-            className={`list-group-item ${
-              selectedAnswer === answer ? "active" : ""
+            className={`answer-option ${
+              selectedAnswer === answer ? "selected" : ""
             }`}
-            onClick={() => onAnswerSelect(answer)}
+            onClick={() => handleAnswerClick(answer)}
           >
-            {answer}
-          </li>
+            <span className="answer-label">{answerLabels[index]}</span> {answer}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
