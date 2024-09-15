@@ -7,7 +7,7 @@ interface Question {
   answers: string[];
   correctAnswer: string;
 }
-
+//rendering list of questions and answers
 const QuizComponent: React.FC = () => {
   const questions: Question[] = [
     {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StartButton from "./components/StartButton";
 import QuizComponent from "./components/QuizComponent";
+import "./App.css";
 
 const App: React.FC = () => {
   const [quizStarted, setQuizStarted] = useState(false);
