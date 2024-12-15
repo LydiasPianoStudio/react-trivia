@@ -1,10 +1,10 @@
-# React Trivia
+# React Trivia 🎵
 
 Created September 9, 2024 by: @LydiasPianoStudio Lydia Bandy
 
 ## Overview
 
-React Trivia is a web application built using React, TypeScript, and Vite. The application provides a trivia game experience where users can answer various trivia questions. This trivia app is specifically designed based on music trivia for students and musicians to enjoy, making learning about music both fun and engaging.
+React Trivia is a web application built using React, TypeScript, and Vite. The application provides a trivia game experience where users can answer various trivia questions. This trivia app is specifically designed based on music trivia for students and musicians to enjoy, making learning about music both fun and engaging. There are 20 questions with a score board at the end! 🎵 What is your score? Give it a try!
 
 ## Skills and Technologies Used
 
@@ -47,6 +47,14 @@ React Trivia is a web application built using React, TypeScript, and Vite. The a
 - Special thanks to all the students and musicians who provided feedback during development.
 - Inspired by the need for fun and educational tools in music education.
 - Special thanks to Joy of Coding Academy and all the teachers and coaches.
+
+## Images
+
+1. ![Music History Quiz Start](react-trivia\public\MusicHistoryQuiz1.png)
+2. ![Music History Quiz Question](react-trivia\public\MusicHistoryQuiz2.png)
+3. ![Question 2](react-trivia\public\MusicHistoryQuiz3.png)
+4. ![Question 3](react-trivia\public\MusicHistoryQuiz4.png)
+5. ![Score](react-trivia\public\MusicHistoryQuiz5.png)
 
 ## Contact
 
