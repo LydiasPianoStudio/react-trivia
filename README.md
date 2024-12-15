@@ -51,10 +51,10 @@ React Trivia is a web application built using React, TypeScript, and Vite. The a
 ## Images
 
 1. ![Music History Quiz Start](react-trivia/public/MusicHistoryQuiz1.png)
-2. ![Music History Quiz Question](react-trivia\public\MusicHistoryQuiz2.png)
-3. ![Question 2](react-trivia\public\MusicHistoryQuiz3.png)
-4. ![Question 3](react-trivia\public\MusicHistoryQuiz4.png)
-5. ![Score](react-trivia\public\MusicHistoryQuiz5.png)
+2. ![Music History Quiz Question](react-trivia/public/MusicHistoryQuiz2.png)
+3. ![Question 2](react-trivia/public/MusicHistoryQuiz3.png)
+4. ![Question 3](react-trivia/public/MusicHistoryQuiz4.png)
+5. ![Score](react-trivia/public/MusicHistoryQuiz5.png)
 
 ## Contact
 
